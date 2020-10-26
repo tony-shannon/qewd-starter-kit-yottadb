@@ -1,6 +1,7 @@
 FROM node:alpine
 
-RUN apt-get update && apt-get install build-essential 
+RUN apt-get update && apt-get install -y \
+  build-essential 
 
 # Create app directory
 RUN mkdir /tmp/tmp
