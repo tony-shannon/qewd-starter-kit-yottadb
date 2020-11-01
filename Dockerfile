@@ -6,9 +6,9 @@ RUN apt-get update \
  && apt-get install -y build-essential 
 
 # Create app directory
-RUN mkdir ~/tmp/tmp1
-RUN wget -P ~/tmp/tmp1 https://gitlab.com/YottaDB/DB/YDB/raw/master/sr_unix/ydbinstall.sh
-RUN cd ~/tmp/tmp1
+RUN mkdir /tmp/tmp1
+RUN cd /tmp/tmp1
+RUN wget -P https://gitlab.com/YottaDB/DB/YDB/raw/master/sr_unix/ydbinstall.sh
 RUN pwd 
 RUN ls
 RUN head -10 ydbinstall.sh
