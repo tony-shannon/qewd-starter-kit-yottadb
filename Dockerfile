@@ -5,6 +5,7 @@ USER root
 RUN apt-get update \
  && apt-get install -y \
   build-essential \
+  libtinfo5 \
   libssl-dev \
   dos2unix \
   wget \
