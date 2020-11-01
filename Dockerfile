@@ -1,5 +1,7 @@
 FROM node:alpine
 
+USER ROOT
+
 RUN apt-get update && apt-get install -y \
   build-essential 
 
@@ -12,3 +14,4 @@ RUN ./ydbinstall.sh --utf8 default --verbose
 RUN source /usr/local/lib/yottadb/r130/ydb_env_set
 RUN cd ~
 
+USER gitpod
