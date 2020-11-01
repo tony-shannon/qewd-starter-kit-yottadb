@@ -30,7 +30,7 @@ RUN cd /tmp/tmp1 \
 && head -10 ydbinstall.sh \
 && chmod +x ydbinstall.sh \
 && ./ydbinstall.sh --utf8 default --verbose
-RUN source /usr/local/lib/yottadb/r130/ydb_env_set
+&& source /usr/local/lib/yottadb/r130/ydb_env_set
 
 
 USER gitpod
