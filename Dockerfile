@@ -11,7 +11,7 @@ RUN apt-get update \
   gzip \
   openssh-server \
   curl \
-  python-minimal \
+  python2-minimal \
   libelf1 \
   locate \
   nano \
