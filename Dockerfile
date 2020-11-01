@@ -12,8 +12,8 @@ RUN cd /tmp/tmp1 \
 && pwd \
 && ls \
 && head -10 ydbinstall.sh \
-&& chmod +x ydbinstall.sh
-RUN ./ydbinstall.sh --utf8 default --verbose
+&& chmod +x ydbinstall.sh \
+&& ./ydbinstall.sh --utf8 default --verbose
 RUN source /usr/local/lib/yottadb/r130/ydb_env_set
 
 
